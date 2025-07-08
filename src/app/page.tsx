@@ -7,13 +7,13 @@ import PersonalLogo from "@public/logo_1024.png";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col lg:flex-row lg:gap-4 min-h-screen items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 p-4 text-center text-white">
+    <main className="flex flex-col lg:flex-row lg:gap-6 min-h-screen items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 p-4 text-center text-white">
       <div className="max-w-lg">
         <Image
           src={PersonalLogo}
           priority
           alt="Sean Ormiston personal brand logo"
-          className="mx-auto border-2 border-double border-white rounded-sm cloud-shadow-md mb-4"
+          className="w-40 h-40 mx-auto border-2 border-double border-white rounded-sm cloud-shadow-md mb-4"
         />
         <h1 className="text-5xl font-bold mb-4 md:text-6xl tracking-wide cloud-shadow-sm">
           Coming Soon
