@@ -1,4 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
+import PersonalLogo from "@public/logo_216.png";
 
 export default function ResumePage() {
   return (
@@ -12,7 +15,7 @@ export default function ResumePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="inline-block w-6 h-6 opacity-80 hover:opacity-100 transition-all duration-200" />
+            <FaGithub className="inline-block w-8 h-8 opacity-80 hover:opacity-100 focus-visible:opacity-100 transition-all duration-200" />
           </a>
 
           <a
@@ -20,8 +23,15 @@ export default function ResumePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="inline-block text-blue-500 w-6 h-6 opacity-80 hover:opacity-100 transition-all duration-200" />
+            <FaLinkedin className="inline-block text-blue-500 w-8 h-8 opacity-80 hover:opacity-100 focus-visible:opacity-100 transition-all duration-200" />
           </a>
+          <Link href="/">
+            <Image
+              src={PersonalLogo}
+              alt="Sean Ormiston Logo"
+              className="rounded-full border-2 border-double w-8 h-8 border-gray-300 shadow-sm opacity-80 hover:opacity-100 focus-visible:opacity-100 transition-all duration-200"
+            />
+          </Link>
         </div>
       </header>
 

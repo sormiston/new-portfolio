@@ -11,8 +11,6 @@ export default function HomePage() {
       <div className="max-w-lg">
         <Image
           src={PersonalLogo}
-          width={160}
-          height={160}
           priority
           alt="Sean Ormiston personal brand logo"
           className="mx-auto border-2 border-double border-white rounded-sm cloud-shadow-md mb-4"
