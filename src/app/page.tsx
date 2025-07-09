@@ -27,7 +27,7 @@ export default function HomePage() {
           alt="Under Construction"
           width={300}
           height={300}
-          className="mx-auto mb-2 cloud-shadow-sm"
+          className="mx-auto mb-2 cloud-shadow-md"
         />
       </div>
       <div className="lg:-mt-16">
@@ -37,10 +37,10 @@ export default function HomePage() {
             href="/2020-portfolio"
             className="underline font-semibold drop-shadow-xs hover:cloud-shadow-xs"
           >
-            2020 (pre-professional) portfolio
+            2020 portfolio
           </Link>
         </p>
-        <div className="text-6xl mb-2">🕴️</div>
+        <div className="text-6xl mb-2 cloud-shadow-sm">🕴️</div>
         <p>
           Or review my current
           <Link
