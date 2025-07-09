@@ -65,12 +65,14 @@ export default function LegacyPortfolioContent() {
           <div className="bio">
             <p>
               Hi, my name is Sean Ormiston. <br />
-              <br />I like <span className="text-secondary">software</span> that
+              <br />I like <span className="text-secondary">software</span>{" "}
+              that&nbsp;
               <span className="text-secondary">solves</span> problems. I like
-              designs that
+              designs that&nbsp;
               <span className="text-secondary">foster</span> clear thinking, and
-              I admire an open-source ethos where tools are
-              <span className="text-secondary">specific</span> and knowledge is
+              I admire an open-source ethos where tools are&nbsp;
+              <span className="text-secondary">specific</span> and knowledge
+              is&nbsp;
               <span className="text-secondary">shared</span>.
               <br />
               <br />
