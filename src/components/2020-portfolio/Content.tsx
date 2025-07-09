@@ -1,9 +1,9 @@
 import Image from "next/image";
-import HeadshotImg from "@public/legacy-portfolio/SeanOrmiston_headshot_0817.jpg";
-import SquirrelTalesImg from "@public/legacy-portfolio/SquirrelTales.png";
-import HiveproImg from "@public/legacy-portfolio/hivepro.png";
-import MydiemImg from "@public/legacy-portfolio/Mydiem.png";
-import P3formImg from "@public/legacy-portfolio/p3form.png";
+import HeadshotImg from "@public/legacy-portfolio-assets/SeanOrmiston_headshot_0817.jpg";
+import SquirrelTalesImg from "@public/legacy-portfolio-assets/SquirrelTales.png";
+import HiveproImg from "@public/legacy-portfolio-assets/hivepro.png";
+import MydiemImg from "@public/legacy-portfolio-assets/Mydiem.png";
+import P3formImg from "@public/legacy-portfolio-assets/p3form.png";
 import Link from "next/link";
 
 export default function LegacyPortfolioContent() {

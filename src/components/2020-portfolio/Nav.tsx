@@ -1,6 +1,7 @@
 "use client";
-import ShipsWheelImg from "@public/legacy-portfolio/ships-wheel.png";
+import ShipsWheelImg from "@public/legacy-portfolio-assets/ships-wheel.png";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function LegacyNav() {
@@ -57,9 +58,9 @@ export default function LegacyNav() {
             </li>
             <small>------------</small>
             <li className="nav-item">
-              <a href="/resume" className="nav-link">
+              <Link href="/resume" className="nav-link">
                 Resume
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

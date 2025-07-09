@@ -1,4 +1,4 @@
-.legacy-portfolio {
+body {
   background: #444;
   color: #fff;
   height: 100%;
@@ -9,6 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-stroke: 0.55px rgba(0, 0, 0, 0.1);
 }
+
 @scope (.legacy-portfolio) {
   @media screen and (min-width: 1171px) {
     .projects h2 {
@@ -117,7 +118,17 @@
     top: 35px;
     cursor: pointer;
     transition: all 0.5s ease-out;
+    /* un-buttonize */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
   }
+
   .menu-btn .btn-line {
     width: 32px;
     height: 3px;
@@ -271,7 +282,7 @@
   }
 
   #landing {
-    background: url("/legacy-portfolio/triangle.jpg");
+    background: url("/legacy-portfolio-assets/triangle.jpg");
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -296,6 +307,10 @@
   #landing .icons {
     font-size: 2rem;
     margin-top: -20px;
+  }
+
+  #landing .icons i:not(:last-child) {
+    margin-right: 0.6rem;
   }
 
   h1,
@@ -392,7 +407,7 @@
 
   #graphic-break {
     min-height: 15vh;
-    background: url("/legacy-portfolio/triangle.jpg");
+    background: url("/legacy-portfolio-assets/triangle.jpg");
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -537,6 +552,7 @@
   }
   .projects img {
     width: 100%;
+    height: auto;
     border: white solid;
   }
   .projects img:hover {

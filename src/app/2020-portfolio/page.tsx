@@ -15,10 +15,9 @@ export default function Portfolio2020() {
         href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         precedence="medium"
       />
-      <div className="legacy-portfolio">
-        <LegacyNav />
-        <LegacyContent />
-      </div>
+
+      <LegacyNav />
+      <LegacyContent />
     </>
   );
 }
