@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function LegacyPortfolioContent() {
   return (
-    <main>
+    <main className="legacy-portfolio-content">
       <section id="landing">
         <h1 className="lg-heading">
           Sean <span className="text-secondary">Ormiston</span>

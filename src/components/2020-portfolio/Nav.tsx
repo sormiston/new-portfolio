@@ -57,10 +57,7 @@ export default function LegacyNav() {
             </li>
             <small>------------</small>
             <li className="nav-item">
-              <a
-                href="https://drive.google.com/file/d/1Q9UEjjH4utDPwSMKUwKNhvesKF4z4GOG/view?usp=sharing"
-                className="nav-link"
-              >
+              <a href="/resume" className="nav-link">
                 Resume
               </a>
             </li>

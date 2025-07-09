@@ -1,9 +1,8 @@
 import LegacyNav from "@/components/2020-portfolio/Nav";
 import LegacyContent from "@/components/2020-portfolio/Content";
-import styles from "@/styles/legacy-portfolio.module.css";
+import "@/styles/legacy-portfolio.css";
 
 export default function Portfolio2020() {
-  console.log(styles);
   return (
     <>
       <link
