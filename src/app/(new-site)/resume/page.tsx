@@ -106,7 +106,7 @@ export default function ResumePage() {
           location="Lisbon"
           websiteUrl="https://priberam.com/"
           bulletPoints={[
-            "Integrated Vue components into in-house JS library, halving dev time.",
+            "Pioneered integration of Vue components into regions of UI controlled by an in-house JavaScript library, halving development time of new UI features.",
             "Developed a JavaScript library to transpile Synthetic Speech Markup Language (SSML) to a content-editable DOM, with robust test coverage.",
           ]}
         />
