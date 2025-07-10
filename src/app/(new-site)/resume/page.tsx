@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import PersonalLogo from "@public/logo_216.png";
+import ExperienceEntry from "@/components/ExperienceEntry";
 
 export default function ResumePage() {
   return (
@@ -42,6 +43,9 @@ export default function ResumePage() {
           accessible, and scalable UIs for e-commerce and enterprise SaaS
           products. Proven ability to lead design of scalable client-side
           architectures as a contributor on cross-disciplinary Agile teams.
+          Known for quickly mastering new technologies and domains, rising to
+          the occasion to solve complex problems and become an authority on new
+          subjects.
         </p>
       </section>
 
@@ -64,91 +68,48 @@ export default function ResumePage() {
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Experience</h2>
 
-        <div className="mb-4">
-          <h3 className="font-medium">Anatta Design | Senior UI Developer</h3>
-          <p className="text-sm text-gray-600">
-            May 2023 - March 2025 | Remote |{" "}
-            <a
-              href="https://anattadesign.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              anattadesign.com
-            </a>
-          </p>
-          <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-            <li>
-              Built a fully custom storefront on a 4-month timeline for a $21M
-              brand.
-            </li>
-            <li>
-              Led technology solution sessions with clients in bi-weekly Agile
-              sprints.
-            </li>
-            <li>
-              Established DevOps protocols for safe independent deployments.
-            </li>
-            <li>
-              Launched 20+ A/B tests; implemented user behavior data collection.
-            </li>
-            <li>Refactored components for accessibility standards.</li>
-            <li>Resolved critical production issues with emergency patches.</li>
-          </ul>
-        </div>
+        <ExperienceEntry
+          title="Senior UI Developer"
+          company="Anatta Design"
+          dateRange="May 2023 - March 2025"
+          location="Remote"
+          websiteUrl="https://anattadesign.com/"
+          bulletPoints={[
+            "Built a fully custom storefront on a 4-month timeline for a $21M brand.",
+            "Led technology solution sessions with clients in bi-weekly Agile sprints.",
+            "Solved DevOps related to Shopify theme management, establishing team workflows to safely manage independent release cycles of code and content.",
+            "Launched 20+ A/B tests; implemented user behavior data collection.",
+            "Refactored components to adhere to accessibility standards.",
+            "Diagnosed and resolved critical production issues with emergency patch deployments.",
+          ]}
+          className="mb-5"
+        />
 
-        <div className="mb-4">
-          <h3 className="font-medium">Unbabel | Frontend Engineer</h3>
-          <p className="text-sm text-gray-600">
-            Feb 2022 - Mar 2023 | Lisbon |{" "}
-            <a
-              href="https://unbabel.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              unbabel.com
-            </a>
-          </p>
-          <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-            <li>Developed a SaaS product for translation professionals.</li>
-            <li>Oversaw backend API migration ensuring zero downtime.</li>
-            <li>
-              Wrote internal guide for migrating microapps from Vue2 to Vue3.
-            </li>
-          </ul>
-        </div>
+        <ExperienceEntry
+          title="Frontend Engineer"
+          company="Unbabel"
+          dateRange="Feb 2022 - Mar 2023"
+          location="Lisbon"
+          websiteUrl="https://unbabel.com/"
+          bulletPoints={[
+            'Spearheaded development of a SaaS product for translation professionals to administrate AI-driven translation workflows ("Pipelines App").',
+            "Planned and implemented a phased migration between backend APIs, ensuring zero downtime during a corporate data acquisition.",
+            "Authored internal developer guide for migrating frontend microapps from Vue2 to Vue3",
+          ]}
+          className="mb-5"
+        />
 
-        <div>
-          <h3 className="font-medium">
-            Priberam Informática | Frontend Developer
-          </h3>
-          <p className="text-sm text-gray-600">
-            May 2021 - Feb 2022 | Lisbon |{" "}
-            <a
-              href="https://priberam.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              priberam.com
-            </a>
-          </p>
-          <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-            <li>
-              Built interactive interfaces for multilingual text editing with ML
-              and voiceover.
-            </li>
-            <li>
-              Integrated Vue components into in-house JS library, halving dev
-              time.
-            </li>
-            <li>
-              Developed JS library to transpile SSML to editable DOM with robust
-              tests.
-            </li>
-          </ul>
-        </div>
+        <ExperienceEntry
+          title="Frontend Developer"
+          company="Priberam Informática"
+          dateRange="May 2021 - Feb 2022"
+          location="Lisbon"
+          websiteUrl="https://priberam.com/"
+          bulletPoints={[
+            "Integrated Vue components into in-house JS library, halving dev time.",
+            "Developed a JavaScript library to transpile Synthetic Speech Markup Language (SSML) to a content-editable DOM, with robust test coverage.",
+          ]}
+        />
       </section>
 
       <section className="mb-8">
