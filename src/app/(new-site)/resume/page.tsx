@@ -71,7 +71,7 @@ export default function ResumePage() {
         <ExperienceEntry
           title="Senior UI Developer"
           company="Anatta Design"
-          dateRange="May 2023 - March 2025"
+          dateRange="May 2023 - May 2025"
           location="Remote"
           websiteUrl="https://anattadesign.com/"
           bulletPoints={[
