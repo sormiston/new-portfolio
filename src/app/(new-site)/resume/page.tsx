@@ -39,13 +39,13 @@ export default function ResumePage() {
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Summary</h2>
         <p>
-          Frontend Engineer with 4 years of experience delivering performant,
-          accessible, and scalable UIs for e-commerce and enterprise SaaS
-          products. Proven ability to lead design of scalable client-side
-          architectures as a contributor on cross-disciplinary Agile teams.
-          Known for quickly mastering new technologies and domains, rising to
-          the occasion to solve complex problems and become an authority on new
-          subjects.
+          Frontend Engineer with 4 years of experience delivering UI solutions
+          for e-commerce and enterprise SaaS products. I&apos;ve a proven
+          ability to take initiative in the design and implementation of
+          client-side architectures in tandem with UX designers, backend
+          developers, and product stakeholders. I&apos;m also a fast learner
+          eager to work with new technologies, learn new business domains, and
+          share what I know with colleagues.
         </p>
       </section>
 
@@ -55,8 +55,8 @@ export default function ResumePage() {
           <h3 className="font-medium">Primary:</h3>
           <p>
             JavaScript, TypeScript, HTML, CSS, SCSS, Tailwind, ReactJS, NextJS,
-            VueJS, Git, Webpack, Rollup, Vite, Agile/Scrum, Release Management,
-            A/B Testing, CI/CD Pipelines, REST APIs, GraphQL, Shopify Plus
+            VueJS, Git, Webpack, Rollup, Vite, Agile/Scrum, Test Driven Development, Release Management,
+            A/B Testing, CI/CD Pipelines, REST, GraphQL, Shopify Plus
           </p>
         </div>
         <div>
@@ -107,7 +107,7 @@ export default function ResumePage() {
           websiteUrl="https://priberam.com/"
           bulletPoints={[
             "Pioneered integration of Vue components into regions of UI controlled by an in-house JavaScript library, halving development time of new UI features.",
-            "Developed a JavaScript library to transpile Synthetic Speech Markup Language (SSML) to a content-editable DOM, with robust test coverage.",
+            "Authored a two-way converter between Synthetic Speech Markup Language (SSML) and HTML using Test Driven Development principles.",
           ]}
         />
       </section>
