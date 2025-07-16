@@ -9,7 +9,7 @@ export default function ResumePage() {
     <main className="max-w-4xl mx-auto p-8 text-gray-800">
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Sean Ormiston</h1>
-        <p className="text-lg">Frontend Engineer</p>
+        <p className="text-lg">Sr. Frontend Developer</p>
         <div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-600">
           <a
             href="https://github.com/sormiston"

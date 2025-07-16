@@ -555,11 +555,6 @@
     height: auto;
     border: white solid;
   }
-  .projects img:hover {
-    filter: brightness(75%);
-    border-color: #eece1a;
-    transition: all 0.5s ease-out;
-  }
 
   #contact {
     margin: 2rem;
