@@ -7,13 +7,13 @@ import PersonalLogo from "@public/logo_1024.png";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col lg:flex-row lg:gap-6 min-h-screen items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 p-4 text-center text-white">
-      <div className="max-w-lg">
+    <main className="flex flex-col lg:flex-row gap-2 md:gap-4 lg:gap-6 min-h-screen items-center justify-center bg-gradient-aurora p-2 md:p-4 lg:p-6 lg:py-4 text-center text-white">
+      <div className="p-2 w-full max-w-3xl border border-white rounded-lg cloud-shadow-sm lg:self-stretch lg:p-4">
         <Image
           src={PersonalLogo}
           priority
           alt="Sean Ormiston personal brand logo"
-          className="w-40 h-40 mx-auto border-2 border-double border-white rounded-sm cloud-shadow-md mb-4"
+          className="w-40 h-40 mx-auto rounded-sm cloud-shadow-md mb-4 bg-iridescent shimmer-effect p-0.5"
         />
         <h1 className="text-5xl font-bold mb-4 md:text-6xl tracking-wide cloud-shadow-sm">
           Coming Soon
@@ -30,26 +30,29 @@ export default function HomePage() {
           className="mx-auto mb-2 cloud-shadow-md"
         />
       </div>
-      <div className="lg:-mt-16">
+
+      <div className="p-2 w-full max-w-3xl lg:max-w-lg border backdrop-blur-md bg-neutral-600/10 border-white rounded-lg cloud-shadow-sm lg:-mt-16 text-lg/6">
         <p className="mb-2 cloud-shadow-xs">
           In the meantime, you can check out my <br />
           <Link
             href="/2020-portfolio"
-            className="underline font-semibold drop-shadow-xs hover:cloud-shadow-xs"
+            className="underline font-semibold drop-shadow-xs hover:cloud-shadow-xs bg-clip-text iridescent-text-overlay shimmer-effect text-transparent"
           >
             2020 portfolio
           </Link>
         </p>
         <div className="text-6xl mb-2 cloud-shadow-sm">🕴️</div>
-        <p>
+        <span className="cloud-shadow-sm">
           Or review my current
-          <Link
-            href="/resume"
-            className="inline-block ml-2 px-2 py-2 cloud-shadow-md bg-white text-indigo-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
-          >
-            RESUME
-          </Link>
-        </p>
+          <div className="ml-2 border border-gray-300 rounded-lg bg-iridescent shimmer-effect p-[1px] w-fit inline-block">
+            <Link
+              href="/resume"
+              className="px-2 py-2 border border-gray-300 inline-block bg-white cloud-shadow-md text-neutral-700 font-semibold rounded-lg shadow-md"
+            >
+              RESUME
+            </Link>
+          </div>
+        </span>
       </div>
     </main>
   );
