@@ -55,8 +55,9 @@ export default function ResumePage() {
           <h3 className="font-medium">Primary:</h3>
           <p>
             JavaScript, TypeScript, HTML, CSS, SCSS, Tailwind, ReactJS, NextJS,
-            VueJS, Git, Webpack, Rollup, Vite, Agile/Scrum, Test Driven Development, Release Management,
-            A/B Testing, CI/CD Pipelines, REST, GraphQL, Shopify Plus
+            VueJS, Git, Webpack, Rollup, Vite, Agile/Scrum, Test Driven
+            Development, Release Management, A/B Testing, CI/CD Pipelines, REST,
+            GraphQL, Shopify Plus
           </p>
         </div>
         <div>
