@@ -27,7 +27,7 @@ export default function ExperienceEntry({
       <h3 className="font-medium">
         {company} | {title}
       </h3>
-      <p className="text-sm text-gray-600">
+      <p className="text-sm text-gray-600 dark:text-gray-400">
         {dateRange} | {location} |{" "}
         <a
           href={websiteUrl}

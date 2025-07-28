@@ -6,11 +6,11 @@ import ExperienceEntry from "@/components/ExperienceEntry";
 
 export default function ResumePage() {
   return (
-    <main className="max-w-4xl mx-auto p-8 text-gray-800">
+    <main className="max-w-4xl mx-auto p-8 text-gray-800 dark:text-gray-100 bg-white dark:bg-neutral-900">
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Sean Ormiston</h1>
-        <p className="text-lg">Sr. Frontend Developer</p>
-        <div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-600">
+        <p className="text-lg">Frontend Developer</p>
+        <div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-300">
           <a
             href="https://github.com/sormiston"
             target="_blank"
@@ -30,7 +30,7 @@ export default function ResumePage() {
             <Image
               src={PersonalLogo}
               alt="Sean Ormiston Logo"
-              className="rounded-full border-2 border-double w-8 h-8 border-gray-300 shadow-sm opacity-80 hover:opacity-100 focus-visible:opacity-100 transition-all duration-200"
+              className="rounded-full border-2 border-double w-8 h-8 border-gray-300 dark:border-gray-600 shadow-sm opacity-80 hover:opacity-100 focus-visible:opacity-100 transition-all duration-200"
             />
           </Link>
         </div>
@@ -136,20 +136,28 @@ export default function ResumePage() {
 
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Certifications</h2>
-        <p className="text-sm font-medium">
-          Typescript for Professionals By Basarat — Udemy — May 2025
-        </p>
-        <p className="text-sm">
-          Advanced Typescript training by Basarat Ali Syed —{" "}
-          <a
-            href="https://www.udemy.com/certificate/UC-d1caa489-3783-45c7-896a-367ccbfa6dfc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            View Certificate
-          </a>
-        </p>
+
+        <a
+          href="https://www.udemy.com/certificate/UC-d1caa489-3783-45c7-896a-367ccbfa6dfc/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          <p className="text-sm font-medium">
+            Typescript for Professionals By Basarat — Udemy — May 2025
+          </p>
+        </a>
+
+        <a
+          href="https://www.udemy.com/certificate/UC-9b64136d-a24a-494f-b1f9-1b7df91a90b0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          <p className="text-sm font-medium">
+            Next JS: The Complete Developer&apos;s Guide — Udemy — July 2025
+          </p>
+        </a>
       </section>
 
       <section className="mb-8">
@@ -158,7 +166,7 @@ export default function ResumePage() {
           <h3 className="font-medium">
             General Assembly | Software Engineering
           </h3>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
             July 2020 - Sep 2020 | Certification
           </p>
           <p className="text-sm">
@@ -177,7 +185,9 @@ export default function ResumePage() {
         </div>
         <div>
           <h3 className="font-medium">CUNY Brooklyn College | Double Bass</h3>
-          <p className="text-sm text-gray-600">2008 - 2012 | B.Mus</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            2008 - 2012 | B.Mus
+          </p>
           <p className="text-sm">
             Classical and contemporary music theory and performance.
           </p>
@@ -189,7 +199,9 @@ export default function ResumePage() {
         <p className="text-sm font-medium">
           Orquestra Círculo Música da Câmara | Double Bassist
         </p>
-        <p className="text-sm text-gray-600">March 2023 - Present | Lisbon</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          March 2023 - Present | Lisbon
+        </p>
         <p className="text-sm">
           Volunteer with a 25-member string orchestra, presenting 5–6 free
           concerts per season.
