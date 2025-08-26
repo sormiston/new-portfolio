@@ -3,8 +3,73 @@ import Image from "next/image";
 import Link from "next/link";
 import PersonalLogo from "@public/logo_216.png";
 import ExperienceEntry from "@/components/ExperienceEntry";
+import resume from "@/content/resume.json";
+
+// Ensure this page is statically generated so errors happen at build time.
+export const dynamic = "force-static";
+
+function SkillBadges({
+  header,
+  keywords,
+  className,
+}: {
+  header?: string;
+  keywords: string[];
+  className?: string;
+}) {
+  return (
+    <div className={className}>
+      {header && <h3 className="font-medium">{header}:</h3>}
+      <div>
+        {keywords.map((kw) => (
+          <span
+            key={kw}
+            className="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded-full mr-2 mb-2"
+          >
+            {kw}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ResumePage() {
+  const skillKeywords = resume.sections.skills.items.find(
+    ({ visible }) => visible
+  )?.keywords;
+
+  if (!skillKeywords) {
+    throw new Error("Resume JSON is missing required Skills items: 'Primary'.");
+  }
+
+  const anattaExpSummary = resume.sections.experience.items.find(
+    (item) => item.company === "Anatta Design"
+  )?.summary;
+
+  const unbabelExpSummary = resume.sections.experience.items.find(
+    (item) => item.company === "Unbabel"
+  )?.summary;
+
+  const priberamExpSummary = resume.sections.experience.items.find(
+    (item) => item.company === "Priberam Informática, S.A."
+  )?.summary;
+
+  const missingExpSummaries = [
+    { company: "Anatta Design", summary: anattaExpSummary },
+    { company: "Unbabel", summary: unbabelExpSummary },
+    { company: "Priberam Informática, S.A.", summary: priberamExpSummary },
+  ].filter((exp) => !exp.summary);
+
+  if (missingExpSummaries.length > 0) {
+    const missingCompanies = missingExpSummaries
+      .map((exp) => exp.company)
+      .join(", ");
+    throw new Error(
+      `Resume JSON is missing required Experience item content for: ${missingCompanies}.`
+    );
+  }
+
   return (
     <main className="max-w-4xl mx-auto p-8 text-gray-800 dark:text-gray-100 bg-white dark:bg-neutral-900">
       <header className="mb-8">
@@ -38,32 +103,14 @@ export default function ResumePage() {
 
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Summary</h2>
-        <p>
-          Frontend Engineer with 4 years of experience delivering UI solutions
-          for e-commerce and enterprise SaaS products. I&apos;ve a proven
-          ability to take initiative in the design and implementation of
-          client-side architectures in tandem with UX designers, backend
-          developers, and product stakeholders. I&apos;m also a fast learner
-          eager to work with new technologies, learn new business domains, and
-          share what I know with colleagues.
-        </p>
+        <div
+          dangerouslySetInnerHTML={{ __html: resume.sections.summary.content }}
+        />
       </section>
 
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Skills</h2>
-        <div className="mb-4">
-          <h3 className="font-medium">Primary:</h3>
-          <p>
-            JavaScript, TypeScript, HTML, CSS, SCSS, Tailwind, ReactJS, NextJS,
-            VueJS, Git, Webpack, Rollup, Vite, Agile/Scrum, Test Driven
-            Development, Release Management, A/B Testing, CI/CD Pipelines, REST,
-            GraphQL, Shopify Plus
-          </p>
-        </div>
-        <div>
-          <h3 className="font-medium">Secondary:</h3>
-          <p>NodeJS, Ruby on Rails, .NET, Entity Relation Design, PostgreSQL</p>
-        </div>
+        <SkillBadges keywords={skillKeywords} className="mb-2" />
       </section>
 
       <section className="mb-8">
@@ -75,14 +122,7 @@ export default function ResumePage() {
           dateRange="May 2023 - May 2025"
           location="Remote"
           websiteUrl="https://anattadesign.com/"
-          bulletPoints={[
-            "Built a fully custom storefront on a 4-month timeline for a $21M brand.",
-            "Led technology solution sessions with clients in bi-weekly Agile sprints.",
-            "Solved DevOps related to Shopify theme management, establishing team workflows to safely manage independent release cycles of code and content.",
-            "Launched 20+ A/B tests; implemented user behavior data collection.",
-            "Refactored components to adhere to accessibility standards.",
-            "Diagnosed and resolved critical production issues with emergency patch deployments.",
-          ]}
+          summary={anattaExpSummary || ""}
           className="mb-5"
         />
 
@@ -92,11 +132,7 @@ export default function ResumePage() {
           dateRange="Feb 2022 - Mar 2023"
           location="Lisbon"
           websiteUrl="https://unbabel.com/"
-          bulletPoints={[
-            'Spearheaded development of a SaaS product for translation professionals to administrate AI-driven translation workflows ("Pipelines App").',
-            "Planned and implemented a phased migration between backend APIs, ensuring zero downtime during a corporate data acquisition.",
-            "Authored internal developer guide for migrating frontend microapps from Vue2 to Vue3",
-          ]}
+          summary={unbabelExpSummary || ""}
           className="mb-5"
         />
 
@@ -106,10 +142,7 @@ export default function ResumePage() {
           dateRange="May 2021 - Feb 2022"
           location="Lisbon"
           websiteUrl="https://priberam.com/"
-          bulletPoints={[
-            "Pioneered integration of Vue components into regions of UI controlled by an in-house JavaScript library, halving development time of new UI features.",
-            "Authored a two-way converter between Synthetic Speech Markup Language (SSML) and HTML using Test Driven Development principles.",
-          ]}
+          summary={priberamExpSummary || ""}
         />
       </section>
 

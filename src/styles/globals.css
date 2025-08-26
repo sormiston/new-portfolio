@@ -51,6 +51,14 @@ body {
   .cloud-shadow-md {
     @apply drop-shadow-lg drop-shadow-white/50;
   }
+
+  .experience-entry ul {
+    @apply list-disc list-inside text-sm mt-2 space-y-1;
+  }
+
+  .experience-entry li > p {
+    @apply inline;
+  }
 }
 
 @layer utilities {

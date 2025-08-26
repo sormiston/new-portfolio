@@ -1,0 +1,461 @@
+{
+  "basics": {
+    "name": "Sean Ormiston",
+    "headline": "Frontend Engineer",
+    "email": "sean.david.ormiston@gmail.com",
+    "phone": "+351 912 697 780",
+    "location": "Lisbon, Portugal",
+    "url": {
+      "label": "",
+      "href": "https://seanormiston.dev"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "https://storage.rxresu.me/cm7xr6dwx49zq1492efsra1kd/pictures/xyzq85rlbsm9niidphex30mj.jpg",
+      "size": 64,
+      "aspectRatio": 0.75,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>Frontend Engineer with 4 years of experience delivering UI solutions for e-commerce and enterprise SaaS products. I've a proven ability to take initiative in the design and implementation of client-side architectures in tandem with UX designers, backend developers, and product stakeholders. I'm also a fast learner eager to work with new technologies, learn new business domains, and share what I know with colleagues.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "ujsccrzr5ezabwvk8v8snf6l",
+          "visible": true,
+          "name": "Typescript for Professionals By Basarat",
+          "issuer": "Udemy",
+          "date": "May 2025",
+          "summary": "<p></p>",
+          "url": {
+            "label": "",
+            "href": "https://www.udemy.com/certificate/UC-d1caa489-3783-45c7-896a-367ccbfa6dfc/"
+          }
+        },
+        {
+          "id": "ticlkvz6812w6653py258rct",
+          "visible": true,
+          "name": "Next JS: The Complete Developer's Guide",
+          "issuer": "Udemy",
+          "date": "July 2025",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": "https://www.udemy.com/certificate/UC-9b64136d-a24a-494f-b1f9-1b7df91a90b0"
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "fl1byjvibssi7u2exn9fq0rw",
+          "visible": true,
+          "institution": "General Assembly",
+          "studyType": "Certification",
+          "area": "Software Engineering",
+          "score": "",
+          "date": "July 2020 - September 2020",
+          "summary": "<ul><li><p> 480+ hours of intensive full-stack development training, covering JavaScript, React, Ruby on Rails, and Git.</p></li><li><p>Built a website \"Squirrel Tales\" which received recognition from the City of New York and is featured in NYC Open Data’s Project Gallery.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "gmouz1x1v7mqfrcu9irpv37x",
+          "visible": true,
+          "institution": "CUNY Brooklyn College",
+          "studyType": "B.Mus",
+          "area": "Double Bass",
+          "score": "",
+          "date": "2008 - 2012",
+          "summary": "<p>Classical and contemporary music theory and performance</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "y07195navfe9llqh4e73imzh",
+          "visible": true,
+          "company": "Anatta Design",
+          "position": "Senior UI Developer",
+          "location": "Remote",
+          "date": "May 2023 - May 2025",
+          "summary": "<ul><li><p>Built a fully custom greenfield storefront on a 4-month timeline for a $21M per annum revenue-earning brand.</p></li><li><p>Implemented a Build Your Own Bundle user flow as a Vue SPA,  resulting in a 22% increase in conversions.</p></li><li><p>Led technology solution sessions with clients in bi-weekly Agile sprint regime.</p></li><li><p>Solved DevOps related to Shopify theme management, establishing team workflows to safely manage independent release cycles of code and content.</p></li><li><p>Launched 20+ A/B tests to incrementally optimize UI for sales conversions; designed and implemented user behavioral data collection.</p></li><li><p>Diagnosed and resolved critical production issues with emergency patch deployments.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://anattadesign.com/"
+          }
+        },
+        {
+          "id": "mlw7xroad2jeb3lv2hex7o3h",
+          "visible": true,
+          "company": "Unbabel",
+          "position": "Frontend Engineer",
+          "location": "Lisbon, Portugal",
+          "date": "Feb 2022 - Mar 2023",
+          "summary": "<ul><li><p>Spearheaded development of a SaaS product for translation professionals to administrate AI-driven translation workflows (\"Pipelines App\").</p></li><li><p>Planned and implemented a phased migration between backend APIs, ensuring zero downtime during a corporate data acquisition.</p></li><li><p>Authored internal developer guide for migrating frontend microapps from Vue2 to Vue3.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://unbabel.com/"
+          }
+        },
+        {
+          "id": "jg4kvx5ekwx6mcxvo8fs74jw",
+          "visible": true,
+          "company": "Priberam Informática, S.A.",
+          "position": "Frontend Developer",
+          "location": "Lisbon, Portugal",
+          "date": "May 2021 - Feb 2022",
+          "summary": "<ul><li><p>Pioneered integration of Vue components into an in-house JavaScript library, halving development time for new UI features.</p></li><li><p>Authored a two-way converter between Synthetic Speech Markup Language (SSML) and HTML using Test Driven Development principles.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://priberam.com/"
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "volunteer",
+      "items": [
+        {
+          "id": "uuiynzmxjjr9w4nrmbzoyr2b",
+          "visible": true,
+          "organization": "Orquestra Círculo Música da Câmara ",
+          "position": "Double Bassist",
+          "location": "Lisbon",
+          "date": "March 2023 - present",
+          "summary": "<p>I volunteer with a 25-member string orchestra, presenting 5 - 6 concerts free to the public per season.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": []
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": []
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "uv3716lvgoqbb19jwtfyb7c8",
+          "visible": true,
+          "network": "GitHub",
+          "username": "sormiston",
+          "icon": "github",
+          "url": {
+            "label": "",
+            "href": "https://github.com/sormiston"
+          }
+        },
+        {
+          "id": "dzy1pq4lu8n8jakwcyisj1n7",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "sormiston",
+          "icon": "linkedin",
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/in/sormiston/"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Open Source Contributions",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "projects",
+      "items": [
+        {
+          "id": "hlyl5l6p2uwxr1l6saakpyxa",
+          "visible": true,
+          "name": "next-auth // 26.3k stars on Github",
+          "description": "PR #12379",
+          "date": "",
+          "summary": "<p>Repaired visibility of OAuth provider logos when viewed with browser dark theme.  Changes affect the library's default OAuth UX flow and documentation website. </p>",
+          "keywords": [],
+          "url": {
+            "label": "",
+            "href": "https://github.com/nextauthjs/next-auth/pull/12379"
+          }
+        }
+      ]
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "qdexntguyglbackukj9ovcd0",
+          "visible": false,
+          "name": "Frontend",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Typescript",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "React",
+            "Responsive Design",
+            "Vue",
+            "Svelte",
+            "Next",
+            "Tailwind",
+            "BEM",
+            "Jest",
+            "AJAX",
+            "Liquid"
+          ]
+        },
+        {
+          "id": "a8961q3uqsassvtcip3wls74",
+          "visible": false,
+          "name": "Backend",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "REST",
+            "GraphQL",
+            "PostgresSQL",
+            "ORM",
+            "MongoDB",
+            "Ruby on Rails",
+            ".NET",
+            "Shopify",
+            "Node"
+          ]
+        },
+        {
+          "id": "r6r3h86mjk6xhgjnxqyg44zn",
+          "visible": false,
+          "name": "Tools & Platforms",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Git",
+            "Jira",
+            "CI/CD",
+            "Shopify",
+            "Sentry",
+            "Speedcurve",
+            "Webpack",
+            "Rollup",
+            "Vite",
+            "Optimizely",
+            "Convert"
+          ]
+        },
+        {
+          "id": "rp7kuaf5pvrm9extjtaobj10",
+          "visible": false,
+          "name": "Other",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Agile methodologies",
+            "Sprint Planning",
+            "Internationalization",
+            "Telemetry",
+            "Scrum",
+            "Machine Learning"
+          ]
+        },
+        {
+          "id": "st0dgzqx9vl88olgijsmim6p",
+          "visible": true,
+          "name": "",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Javascript",
+            "Typescript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind",
+            "ReactJS",
+            "NextJS",
+            "VueJS",
+            "Git",
+            "Webpack",
+            "Rollup",
+            "Vite",
+            "Agile / Scrum",
+            "Release Management",
+            "A/B Testing",
+            "CI/CD Pipelines",
+            "REST APIs",
+            "GraphQL",
+            "Shopify Plus",
+            "Jest",
+            "Testing Library"
+          ]
+        },
+        {
+          "id": "isdq4mxqxz611hkx2fop5sbv",
+          "visible": false,
+          "name": "Secondary",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "NodeJS",
+            "Ruby on Rails",
+            ".NET",
+            "Entity Relation Design",
+            "PostgreSQL"
+          ]
+        }
+      ]
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "onyx",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "skills",
+          "experience",
+          "references"
+        ],
+        [
+          "interests",
+          "awards",
+          "publications"
+        ]
+      ],
+      [
+        [
+          "projects",
+          "certifications",
+          "education",
+          "volunteer"
+        ],
+        [
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 22,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#dc2626"
+    },
+    "typography": {
+      "font": {
+        "family": "Lato",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.4,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}
