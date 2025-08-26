@@ -24,7 +24,7 @@ export default function ExperienceEntry({
 
   return (
     <div className={`experience-entry ${className}`}>
-      <h3 className="font-medium">
+      <h3 className="font-medium underline underline-offset-2">
         {company} | {title}
       </h3>
       <p className="text-sm text-gray-600 dark:text-gray-400">
