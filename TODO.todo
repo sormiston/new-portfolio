@@ -1,0 +1,5 @@
+Resume:
+    ☐ run safety check on HTML strings contained in the resume json [M]
+    ☐ continue soft-coding by mapping from json [C]
+    ☐ incorporate new elements provded by json (image?) [S]
+    ☐ incorporate new stylistic and formattign data provided by json [C]
