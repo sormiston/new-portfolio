@@ -5,7 +5,7 @@ interface ExperienceEntryProps {
   location: string;
   websiteUrl: string;
   websiteText?: string;
-  bulletPoints: string[];
+  summary: string;
   className?: string;
 }
 
@@ -16,15 +16,15 @@ export default function ExperienceEntry({
   location,
   websiteUrl,
   websiteText,
-  bulletPoints,
+  summary,
   className,
 }: ExperienceEntryProps) {
   const websiteTextNormalized =
     websiteText || websiteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
   return (
-    <div className={className}>
-      <h3 className="font-medium">
+    <div className={`experience-entry ${className}`}>
+      <h3 className="font-medium underline underline-offset-2">
         {company} | {title}
       </h3>
       <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -38,11 +38,7 @@ export default function ExperienceEntry({
           {websiteTextNormalized}
         </a>
       </p>
-      <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-        {bulletPoints.map((point, index) => (
-          <li key={index}>{point}</li>
-        ))}
-      </ul>
+      <div dangerouslySetInnerHTML={{ __html: summary }} />
     </div>
   );
 }
